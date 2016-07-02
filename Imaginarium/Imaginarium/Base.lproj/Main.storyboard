@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="deh-JX-Kzr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Imaginarium-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m39-6t-j7L"/>
+                        <viewControllerLayoutGuide type="bottom" id="RLt-zL-DNS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ld-tc-9NX">
+                                <rect key="frame" x="131" y="269" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Peppers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LM8-iG-VQg" kind="push" identifier="photo_2" id="nah-pj-sLb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkq-Qk-I3k">
+                                <rect key="frame" x="133" y="236" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Flowers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LM8-iG-VQg" kind="push" identifier="photo_1" id="PAH-9F-c5W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdM-ca-qnF">
+                                <rect key="frame" x="130" y="307" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="JellyFish">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LM8-iG-VQg" kind="push" identifier="photo_3" id="S4W-bH-yIC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="0ld-tc-9NX" secondAttribute="centerY" id="6r5-LC-LVn"/>
+                            <constraint firstAttribute="centerX" secondItem="0ld-tc-9NX" secondAttribute="centerX" id="8fN-Jf-WWv"/>
+                            <constraint firstAttribute="centerX" secondItem="Qkq-Qk-I3k" secondAttribute="centerX" id="FFx-aN-f1y"/>
+                            <constraint firstItem="0ld-tc-9NX" firstAttribute="top" secondItem="Qkq-Qk-I3k" secondAttribute="bottom" constant="3" id="ONF-Vl-nFr"/>
+                            <constraint firstItem="PdM-ca-qnF" firstAttribute="top" secondItem="0ld-tc-9NX" secondAttribute="bottom" constant="8" id="VnC-pS-5O5"/>
+                            <constraint firstAttribute="centerX" secondItem="PdM-ca-qnF" secondAttribute="centerX" id="tDg-iN-xNI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Imaginarium" id="oQy-Uc-MkA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="-10"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="7r8-Pa-eGw">
+            <objects>
+                <viewController id="LM8-iG-VQg" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NBJ-t9-76U"/>
+                        <viewControllerLayoutGuide type="bottom" id="hOF-ac-sSk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="knp-rI-YR9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGH-VR-p5r">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gGZ-UO-gUG">
+                                <rect key="frame" x="142" y="266" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IGH-VR-p5r" secondAttribute="bottom" id="506-8Z-HKZ"/>
+                            <constraint firstAttribute="centerY" secondItem="gGZ-UO-gUG" secondAttribute="centerY" id="5z2-0r-7UA"/>
+                            <constraint firstAttribute="centerX" secondItem="gGZ-UO-gUG" secondAttribute="centerX" id="B7N-Sd-tC4"/>
+                            <constraint firstItem="IGH-VR-p5r" firstAttribute="leading" secondItem="knp-rI-YR9" secondAttribute="leading" id="YIB-UI-RUn"/>
+                            <constraint firstItem="IGH-VR-p5r" firstAttribute="top" secondItem="knp-rI-YR9" secondAttribute="top" id="cCX-0N-xOh"/>
+                            <constraint firstAttribute="trailing" secondItem="IGH-VR-p5r" secondAttribute="trailing" id="h4x-BH-ezm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H6U-Jz-g0F"/>
+                    <connections>
+                        <outlet property="scrollView" destination="IGH-VR-p5r" id="m4a-G0-jqP"/>
+                        <outlet property="spinner" destination="gGZ-UO-gUG" id="dch-rI-jTn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6C-QJ-cXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="-10"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VZq-FL-aAR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="deh-JX-Kzr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dI1-d2-aLP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="RY9-30-2su"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mb1-Jy-yHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-10"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="PAH-9F-c5W"/>
+    </inferredMetricsTieBreakers>
+</document>
