@@ -1,0 +1,83 @@
+/*+(NSMutableAttributedString*) setColor:(NSMutableAttributedString *) myString : (NSString*) myColor{
+    
+    if([myColor isEqualToString:@"redColor"]){
+        [myString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, [myString length])];
+    }
+    if([myColor isEqualToString:@"greenColor"]){
+         [myString addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(0, [myString length])];
+    }
+    if([myColor isEqualToString:@"yellowColor"]){
+         [myString addAttribute:NSForegroundColorAttributeName value:[UIColor yellowColor] range:NSMakeRange(0, [myString length])];
+    }
+        
+    return myString;
+    
+}
+
++(NSMutableAttributedString *)setStroke :(NSMutableAttributedString *) myString : (NSString*) myColor{
+    
+    if([myColor isEqualToString:@"redColor"]){
+        [myString addAttributes:@{NSStrokeWidthAttributeName:[NSNumber numberWithFloat:-3.0],NSStrokeColorAttributeName:[UIColor redColor],NSForegroundColorAttributeName:[UIColor redColor]} range:NSMakeRange(0, [myString length])];
+    }
+    
+    
+    if([myColor isEqualToString:@"greenColor"]){
+        [myString addAttributes:@{NSStrokeWidthAttributeName:[NSNumber numberWithFloat:-3.0],NSStrokeColorAttributeName:[UIColor greenColor],NSForegroundColorAttributeName:[UIColor greenColor]} range:NSMakeRange(0, [myString length])];
+    }
+    
+    
+    if([myColor isEqualToString:@"yellowColor"]){
+        [myString addAttributes:@{NSStrokeWidthAttributeName:[NSNumber numberWithFloat:-3.0],NSStrokeColorAttributeName:[UIColor yellowColor],NSForegroundColorAttributeName:[UIColor yellowColor]} range:NSMakeRange(0, [myString length])];
+    }
+    
+    
+    return myString;
+}
+
++(NSMutableAttributedString*) setOpen : (NSMutableAttributedString *) myString : (NSString*) myColor{
+    if ([myColor isEqualToString:@"redColor"]) {
+        [myString addAttributes:@{NSStrokeWidthAttributeName: @3,NSStrokeColorAttributeName:[UIColor redColor]} range:NSMakeRange(0,[myString length])];
+    }
+    if ([myColor isEqualToString:@"yellowColor"]) {
+        [myString addAttributes:@{NSStrokeWidthAttributeName: @3,NSStrokeColorAttributeName:[UIColor yellowColor]} range:NSMakeRange(0,[myString length])];
+    }
+    if ([myColor isEqualToString:@"greenColor"]) {
+        [myString addAttributes:@{NSStrokeWidthAttributeName: @3,NSStrokeColorAttributeName:[UIColor greenColor]} range:NSMakeRange(0,[myString length])];
+    }
+    
+    return  myString;
+    
+    
+}*/
+
+  /* NSMutableArray * temp=[[NSMutableArray alloc]init];
+    NSArray *arr=[[NSArray alloc]init];
+    
+    NSMutableAttributedString *s=[[NSMutableAttributedString alloc]initWithString:@" ⃞"];
+    NSMutableAttributedString *c=[[NSMutableAttributedString alloc]initWithString:@" ⃝"];
+    NSMutableAttributedString *t=[[NSMutableAttributedString alloc]initWithString:@"△"];
+    
+    NSArray *shapes=@[s,c,t];
+    NSArray *colors=@[@"redColor",@"greenColor",@"yellowColor"];
+    
+    for (int i=0; i<3; i++) {
+        for (int j=0; j<3; j++) {
+            
+            NSMutableAttributedString *t1=[[NSMutableAttributedString alloc]init];
+            NSMutableAttributedString *t2=[[NSMutableAttributedString alloc]init];
+            NSMutableAttributedString *t3=[[NSMutableAttributedString alloc]init];
+            
+           [t1 setAttributedString:[self setColor:shapes[i] :colors[j]]];
+           [t2 setAttributedString:[self setStroke:shapes[i] :colors[j]]];
+            [t3 setAttributedString:[self setOpen:shapes[i]:colors[j]]];
+            [temp addObject:t1];
+            [temp addObject:t2];
+            [temp addObject:t3];
+            NSLog(@"My count:%lu",(unsigned long)[temp count]);
+            }
+        
+    }
+    arr=temp;
+return arr;*/
+    
+
